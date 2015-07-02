@@ -34,5 +34,12 @@ namespace EccoSelect.com
       DateTime testDate = openFda.convertApiDate(testDateString);
       Assert.IsTrue(testDate.Equals(new DateTime(2010, 12, 25, 0, 0, 0)));
     }
+
+    [TestMethod]
+    public void GetStateList()
+    {
+      List<State> stateList = State.getStateList();
+      Assert.IsTrue(stateList.Count == 56);
+    }
   }
 }
