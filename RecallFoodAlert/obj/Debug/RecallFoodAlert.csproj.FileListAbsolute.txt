@@ -1,0 +1,10 @@
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\obj\Debug\RecallFoodAlert.csprojResolveAssemblyReference.cache
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\RecallFoodAlert.dll
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\RecallFoodAlert.pdb
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\log4net.dll
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\Newtonsoft.Json.dll
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\log4net.xml
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\Newtonsoft.Json.pdb
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\Newtonsoft.Json.xml
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\obj\Debug\RecallFoodAlert.dll
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\obj\Debug\RecallFoodAlert.pdb

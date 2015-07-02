@@ -38,7 +38,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\log4net-1.2.13-bin-newkey\log4net-1.2.13\bin\net\4.0\release\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,18 +64,70 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\foundation.css" />
+    <Content Include="css\foundation.min.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="Home.aspx" />
+    <Content Include="js\foundation.min.js" />
+    <Content Include="js\foundation\foundation.abide.js" />
+    <Content Include="js\foundation\foundation.accordion.js" />
+    <Content Include="js\foundation\foundation.alert.js" />
+    <Content Include="js\foundation\foundation.clearing.js" />
+    <Content Include="js\foundation\foundation.dropdown.js" />
+    <Content Include="js\foundation\foundation.equalizer.js" />
+    <Content Include="js\foundation\foundation.interchange.js" />
+    <Content Include="js\foundation\foundation.joyride.js" />
+    <Content Include="js\foundation\foundation.js" />
+    <Content Include="js\foundation\foundation.magellan.js" />
+    <Content Include="js\foundation\foundation.offcanvas.js" />
+    <Content Include="js\foundation\foundation.orbit.js" />
+    <Content Include="js\foundation\foundation.reveal.js" />
+    <Content Include="js\foundation\foundation.slider.js" />
+    <Content Include="js\foundation\foundation.tab.js" />
+    <Content Include="js\foundation\foundation.tooltip.js" />
+    <Content Include="js\foundation\foundation.topbar.js" />
+    <Content Include="js\jquery-2.1.4.js" />
+    <Content Include="js\jquery-dataTables.js" />
+    <Content Include="js\Readmore.js-master\ajax-demo.html" />
+    <Content Include="js\Readmore.js-master\demo.html" />
+    <Content Include="js\Readmore.js-master\gulpfile.js" />
+    <Content Include="js\Readmore.js-master\jquery.mockjax.js" />
+    <Content Include="js\Readmore.js-master\readmore.js" />
+    <Content Include="js\Readmore.js-master\readmore.min.js" />
+    <Content Include="js\vendor\fastclick.js" />
+    <Content Include="js\vendor\jquery.cookie.js" />
+    <Content Include="js\vendor\jquery.js" />
+    <Content Include="js\vendor\modernizr.js" />
+    <Content Include="js\vendor\placeholder.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IOpenFda.cs" />
+    <Compile Include="OpenFda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecallFoodAlertData.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="js\Readmore.js-master\bower.json" />
+    <Content Include="js\Readmore.js-master\CHANGELOG.md" />
+    <Content Include="js\Readmore.js-master\package.json" />
+    <Content Include="js\Readmore.js-master\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
