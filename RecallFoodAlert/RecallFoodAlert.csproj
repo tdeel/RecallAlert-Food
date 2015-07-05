@@ -38,6 +38,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\log4net-1.2.13-bin-newkey\log4net-1.2.13\bin\net\4.0\release\log4net.dll</HintPath>
@@ -46,6 +52,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -99,6 +108,7 @@
     <Content Include="js\vendor\jquery.js" />
     <Content Include="js\vendor\modernizr.js" />
     <Content Include="js\vendor\placeholder.js" />
+    <Content Include="Model\RecallFoodAlertModel.edmx.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +120,24 @@
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="IOpenFda.cs" />
+    <Compile Include="Model\RecallFoodAlertModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecallFoodAlertModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecallFoodAlertModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecallFoodAlertModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecallFoodAlertModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RecallFoodAlertModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TextAlert.cs">
+      <DependentUpon>RecallFoodAlertModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="OpenFda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecallFoodAlertData.cs" />
@@ -120,6 +148,24 @@
     <Content Include="js\Readmore.js-master\CHANGELOG.md" />
     <Content Include="js\Readmore.js-master\package.json" />
     <Content Include="js\Readmore.js-master\README.md" />
+    <Content Include="packages.config" />
+    <EntityDeploy Include="Model\RecallFoodAlertModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RecallFoodAlertModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Model\RecallFoodAlertModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RecallFoodAlertModel.edmx</DependentUpon>
+      <LastGenOutput>RecallFoodAlertModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\RecallFoodAlertModel.edmx.diagram">
+      <DependentUpon>RecallFoodAlertModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model\RecallFoodAlertModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RecallFoodAlertModel.edmx</DependentUpon>
+      <LastGenOutput>RecallFoodAlertModel.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -129,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

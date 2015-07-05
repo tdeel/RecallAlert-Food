@@ -8,3 +8,7 @@ C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\Newton
 C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\Newtonsoft.Json.xml
 C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\obj\Debug\RecallFoodAlert.dll
 C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\obj\Debug\RecallFoodAlert.pdb
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\EntityFramework.dll
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\EntityFramework.SqlServer.dll
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\EntityFramework.xml
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\bin\EntityFramework.SqlServer.xml

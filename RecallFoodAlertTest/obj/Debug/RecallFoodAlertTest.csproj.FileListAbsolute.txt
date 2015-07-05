@@ -11,3 +11,8 @@ C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlertTest\bin\De
 C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlertTest\obj\Debug\RecallFoodAlertTest.csprojResolveAssemblyReference.cache
 C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlertTest\obj\Debug\RecallFoodAlertTest.dll
 C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlertTest\obj\Debug\RecallFoodAlertTest.pdb
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlertTest\bin\Debug\RecallFoodAlertTest.dll.config
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlertTest\bin\Debug\EntityFramework.dll
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlertTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlertTest\bin\Debug\EntityFramework.xml
+C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlertTest\bin\Debug\EntityFramework.SqlServer.xml

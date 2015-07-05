@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EccoSelect.com.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EccoSelectcomStoreContainer">
+    <EntitySet Name="TextAlert" EntityType="EccoSelect.com.Store.TextAlert" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="TextAlert">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MobilePhone" Type="nvarchar" Nullable="false" MaxLength="15" />
+    <Property Name="AlertType" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="StateCode" Type="nchar" Nullable="true" MaxLength="2" />
+    <Property Name="RegistrationDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+</Schema>
