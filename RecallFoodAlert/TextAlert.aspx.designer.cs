@@ -10,7 +10,7 @@
 namespace RecallFoodAlert {
     
     
-    public partial class Home {
+    public partial class TextAlert {
         
         /// <summary>
         /// form1 control.
@@ -22,13 +22,13 @@ namespace RecallFoodAlert {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// inputSearch control.
+        /// txtMobilePhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox inputSearch;
+        protected global::System.Web.UI.WebControls.TextBox txtMobilePhone;
         
         /// <summary>
         /// cmbState control.
@@ -40,22 +40,22 @@ namespace RecallFoodAlert {
         protected global::System.Web.UI.WebControls.DropDownList cmbState;
         
         /// <summary>
-        /// searchButton control.
+        /// lstAlertTypes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton searchButton;
+        protected global::System.Web.UI.WebControls.DropDownList lstAlertTypes;
         
         /// <summary>
-        /// lblError control.
+        /// txtFoodBrand control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.WebControls.TextBox txtFoodBrand;
         
         /// <summary>
         /// odsStates control.

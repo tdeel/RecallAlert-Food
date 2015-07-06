@@ -27,7 +27,7 @@ namespace EccoSelect.com
     {
       // string returnJson = "";
       List<RecallFoodAlertData> recallList = new List<RecallFoodAlertData>();
-      if (searchText.Length > 0)
+      if (searchText.Length > 0 || state.Length > 0)
       {
         string openFdaApiKey = "?api_key=ovNVdm7TO3IlzJr8ABOS6Zpdad70SNsBV3NW757e";
 
@@ -36,9 +36,9 @@ namespace EccoSelect.com
         string openFdaSearchParms = "";
         if (searchText.Trim().Length > 0)
         {
-          openFdaSearchParms += string.Format("recalling_firm:{0}", searchText.Replace("'", ""));
+          openFdaSearchParms += string.Format("product_description:{0}+recalling_firm:{0}", searchText.Replace("'", ""));
         }
-        if (state.Trim().Length > 0)
+        if (state.Trim().Length > 0 && !state.Trim().ToUpper().Equals("USA"))
         {
           if (openFdaSearchParms.Length > 0)
           {
@@ -46,10 +46,15 @@ namespace EccoSelect.com
           }
           openFdaSearchParms += string.Format("state:{0}", state.Trim().ToUpper());
         }
+        if (openFdaSearchParms.Length > 0)
+        {
+          openFdaSearchParms += "+AND+";
+        }
+        openFdaSearchParms += "product_type:Food";
         openFdaSearch += openFdaSearchParms;
 
         // Limit the results for the purposes of this prototype
-        string openFdaLimit = "&limit=50";
+        string openFdaLimit = "&limit=100";
 
         var fdaUrl = this.OpenFdaSite + openFdaApiKey + openFdaLimit + openFdaSearch;
 

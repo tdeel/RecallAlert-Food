@@ -125,7 +125,7 @@ select {
 
 .row {
   margin: 0 auto;
-  max-width: 62.5rem;
+  /*max-width: 62.5rem;*/
   width: 100%; }
   .row:before, .row:after {
     content: " ";
@@ -3700,8 +3700,7 @@ td {
 a {
   color: #008CBA;
   line-height: inherit;
-  /* text-decoration: none;*/
-}
+  text-decoration: none; }
   a:hover, a:focus {
     color: #0078a0; }
   a img {

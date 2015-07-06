@@ -1,0 +1,517 @@
+/* 
+CLIENT: OpenFDA
+PROJECT: Recall Alert - Food Safety
+AGENCY: UseAgility
+DEVELOPER: Trampas Whiteman
+DATE: 6/20/2015  
+*/
+
+/* 
+COLOR GUIDE
+DARK BLUE - #003152
+BLUE - #005f9f
+BLACK - #323232
+SILVER 1 - #F2F2F2
+SILVER 2 - #EEEEEE
+*/
+
+/* GENERAL */
+body{
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+}
+
+body h1 {
+  font-size: 1.666em;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin-bottom: 0.25em;
+  margin-top: 0.5em;
+}
+
+body h2 {
+  font-size: 1.166em;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+body h3{
+  font-size: 1.1666em;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+body h4{
+  font-size: 1.08333em;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+body a{
+  color: #005f9f;
+}
+
+body a:hover{
+  color: #003152;
+  text-decoration: underline;
+}
+
+body ul, 
+body ol, 
+body dl {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+body p{
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  font-size: 14px;
+}
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  border: 1px solid #323232;
+  -webkit-box-shadow: 2px 2px 16px 5px #666;
+  box-shadow: 2px 2px 16px 5px #666;
+}
+
+.content-row {
+  display: block;
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.clear{
+  clear: both;
+}
+
+.img-responsive{
+  width: 100%;
+  height: auto;
+}
+
+.breadcrumbs {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+input, 
+select {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: block;
+  overflow: hidden;
+}
+
+.box h2{
+  background: #eee;
+  margin: 0;
+  padding: 10px;
+}
+
+.no-pad-left{
+  padding-left: 0;
+}
+
+.no-pad-right {
+  padding-right: 0;
+}
+
+/* HEADER */
+header{
+  background:url(../img/top-bar-bg.png) repeat-x #f2f2f2;
+  padding: 15px;
+  height: 150px;
+}
+
+.logo {
+  display: block;
+  margin-top: 27px;
+  max-width: 130px;
+  padding-right: 15px;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.open-fda-container {
+  position: relative;
+  top: 59px;
+}
+
+.open-fda-container p {
+  margin-bottom: 0;
+}
+
+.open-fda img{
+  max-width: 99px;
+}
+
+.powered-by {
+  position: relative;
+  top: 1px;
+}
+
+/* FOOTER */
+footer{
+  padding: 15px;
+  background:#003152;
+  color: #fff;
+}
+
+.copyright {
+  font-size: .8em;
+  margin-bottom: 0;
+}
+
+/* HOME PAGE */
+.row .row.home-top {
+  margin-bottom: 15px;
+}
+
+.grocery-store-img {
+  border-radius: 5px;
+}
+
+.optional-text {
+  margin-left: 15px;
+}
+
+.search-bar-input-div > input#search-bar-input {
+  border-radius: 5px;
+}
+
+.submit-img {
+  margin-left: 15px;
+  max-width: 92px;
+  background: url("../img/btn_Search.jpg") no-repeat;
+  text-indent: -9999px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-img:hover {
+  background: url("../img/btn_Hover_Search.jpg") no-repeat;
+}
+
+/* HOME PAGE - recall box */
+.recall-box.box {
+  height: 200px;
+}
+
+.recall-box ul {
+  padding: 10px;
+}
+
+.recall-box.box li {
+  margin-bottom: 15px;
+}
+
+/* HOME PAGE - alert box */
+
+.home-page-alert-box.box {
+  height: 200px;
+}
+
+.home-page-alert-box.box > p {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 2.5;
+  padding: 15px 15px 0;
+  margin-bottom: 15px;
+}
+
+.home-page-alert-box.box > p.alerts-social-text {
+  line-height: 1;
+}
+
+.home-page-alert-box.box > ul {
+  margin-bottom: 5px;
+}
+
+.home-page-alert-box.box li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.home-page-alert-box.box a {
+  color: #000;
+}
+
+.alert-icon{
+  margin-right: 15px;
+  max-width: 47px;
+}
+
+.alert-icon:hover{
+  text-decoration: underline;
+}
+
+.social-icon {
+  background: url("../img/sprite_SocialMedia.png") no-repeat;
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.social-icon:hover {
+  background: url("../img/sprite_Hover_SocialMedia.png") no-repeat;
+}
+
+.facebook-icon, .facebook-icon:hover {
+  background-position: 0 0;
+}
+
+.twitter-icon, .twitter-icon:hover {
+  background-position: -64px 0;
+}
+
+.rss-icon, .rss-icon:hover{
+  background-position: -128px 0;
+}
+
+/* HOME PAGE - other websites */
+.other-websites-ul{
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.other-websites-ul li {
+  border-bottom: 1px solid #ddd;
+  height: 90.5px;
+  padding: 10px;
+}
+
+.other-websites-ul a {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.166em;
+  line-height: 1.3;
+}
+
+.icon{
+  width: 62px;
+  height: 55px;
+  background: url(../img/sprite_RecallAlertWebsites.png) no-repeat;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.rx-icon{
+  background-position: 0 0;
+}
+
+.cow-icon{
+  background-position: 0 -85px;
+}
+
+.dna-icon{
+  background-position: 0 -158px;
+}
+
+.syringe-icon{
+  background-position: 0 -234px;
+}
+
+.lipstick-icon{
+  background-position: 0 -314px;
+}
+
+.other-website-text {
+  padding-top: 5px;
+}
+
+.other-website-text:hover {
+  text-decoration: underline;
+}
+
+/* TEXT ALERT SIGN UP PAGE */
+.signup-img {
+  max-width: 98px;
+  text-indent: -9999px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background: url(../img/btn_SignUp.jpg) no-repeat;
+}
+
+.signup-img:hover {
+  background: url(../img/btn_Hover_SignUp.jpg) no-repeat;
+}
+
+/* DETAILS PAGE */
+.detail-box{
+  background: #f9fdff;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.detail-box-text{
+
+}
+
+.detail-box.box li.steps {
+  clear: both;
+  list-style-type: none;
+}
+
+.detail-recall-box{
+  background: #eee;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+.detail-alert{
+  margin-bottom: 15px;
+}
+
+.detail-number-icon{
+  background: url(../img/sprite_StepIcons.png) no-repeat;
+  display: block;
+  width: 38px;
+  height: 75px;
+  margin-right: 15px;
+}
+
+.number-one{
+  background-position: 0 0;
+}
+
+.number-two{
+  background-position: -82px 0;
+}
+
+.number-three{
+  background-position: -162px 0;
+}
+
+.alert-one,
+.alert-two {
+  padding: 10px;
+}
+
+  .detail-alert.home-page-alert-box.box {
+    height: auto;
+  }
+
+/* SEARCH PAGE */
+.risk-level{
+  max-width: 77px;
+}
+
+.search-result-container {
+  margin-bottom: 15px;
+}
+
+.search-result-box {
+  background: #f9fdff;
+  padding: 15px;
+}
+
+.sort-container p{
+  text-align: right;
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+.sort-container select {
+  padding-right: 15px;
+  width: auto;
+}
+
+/* MEDIA QUERIES */
+
+/* Small screens */
+@media only screen and (max-width: 640px) { 
+  body h1{
+    font-size: 1.3em
+  }
+
+  p {
+    font-size: .8rem;
+  }
+
+  header{
+    height: 125px;
+  }
+
+  .header-row{
+    padding: 0;
+  }
+
+  .logo-container {
+    max-width: 105px;
+  }
+
+  .open-fda-container {
+    top: 52px;
+  }
+
+  .recall-search-area {
+    padding-left: 15px;
+  }
+
+  .alert-box-small {
+    background: #f9fdff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    line-height: 2.5;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .breadcrumbs a {
+    font-size: 0.86em;
+  }
+
+  .detail-sidebar.no-pad-left.columns {
+    padding-left: 15px;
+  }
+
+
+} 
+
+/* Medium screens */
+@media only screen and (min-width: 641px) and (max-width: 1024px) { 
+  p {
+    font-size: .8rem;
+  } 
+
+  .home-page-alert-box.box > p {
+    line-height: 1.3;
+  }
+
+  .detail-sidebar.no-pad-left.columns {
+    padding-left: 15px;
+  }
+  
+  .other-websites-ul li {
+    border-bottom: 1px solid #ddd;
+    float: left;
+    height: 90.5px;
+    margin-right: 3em;
+    padding: 10px;
+  }
+
+
+} 
+
+/* Large screens */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) { 
+
+
+}
+

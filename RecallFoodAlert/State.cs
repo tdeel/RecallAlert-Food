@@ -23,6 +23,7 @@ namespace EccoSelect.com
     public static List<State> getStateList()
     {
       List<State> stateList = new List<State>();
+      stateList.Add(new State("All States", "USA"));
       stateList.Add(new State("Alabama", "AL"));
       stateList.Add(new State("Alaska", "AK"));
       stateList.Add(new State("Arizona", "AZ"));
@@ -74,11 +75,11 @@ namespace EccoSelect.com
       stateList.Add(new State("Wisconsin", "WI"));
       stateList.Add(new State("Wyoming", "WY"));
       stateList.Add(new State("Washington DC", "DC"));
-      stateList.Add(new State("Puerto Rico", "PR"));
-      stateList.Add(new State("U.S. Virgin Islands", "VI"));
-      stateList.Add(new State("American Samoa", "AS"));
-      stateList.Add(new State("Guam", "GU"));
-      stateList.Add(new State("Northern Mariana Islands", "MP"));
+      //stateList.Add(new State("Puerto Rico", "PR"));
+      //stateList.Add(new State("U.S. Virgin Islands", "VI"));
+      //stateList.Add(new State("American Samoa", "AS"));
+      //stateList.Add(new State("Guam", "GU"));
+      //stateList.Add(new State("Northern Mariana Islands", "MP"));
 
       return stateList;
     }

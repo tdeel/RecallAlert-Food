@@ -10,7 +10,7 @@
 namespace RecallFoodAlert {
     
     
-    public partial class Home {
+    public partial class Search {
         
         /// <summary>
         /// form1 control.
@@ -49,13 +49,13 @@ namespace RecallFoodAlert {
         protected global::System.Web.UI.WebControls.ImageButton searchButton;
         
         /// <summary>
-        /// lblError control.
+        /// resultsDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblError;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl resultsDiv;
         
         /// <summary>
         /// odsStates control.
