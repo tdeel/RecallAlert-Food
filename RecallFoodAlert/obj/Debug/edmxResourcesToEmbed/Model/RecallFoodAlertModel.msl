@@ -8,6 +8,7 @@
           <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
           <ScalarProperty Name="AlertType" ColumnName="AlertType" />
           <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="SearchText" ColumnName="SearchText" />
           <ScalarProperty Name="RegistrationDateTime" ColumnName="RegistrationDateTime" />
         </MappingFragment>
       </EntityTypeMapping>

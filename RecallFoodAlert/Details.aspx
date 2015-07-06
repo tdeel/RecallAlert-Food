@@ -133,7 +133,7 @@
                         <div class="detail-alert home-page-alert-box box">
                             <h2>Alerts</h2>
                             <div class="alert-one large-12 medium-6 small-12 columns">
-                                <p><a href="#">
+                                <p><a href="TextAlert.aspx">
                                     <img class="alert-icon img-responsive left" src="img/icon_sms.png" />Sign up for text message alerts.</a></p>
                             </div>
                             <div class="alert-two large-12 medium-6 small-12 columns">

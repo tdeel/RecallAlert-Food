@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="header-row large-12 medium-12 small-12 columns">
                         <div class="logo-container left">
-                            <a class="logo" href="index.html">
+                            <a class="logo" href="Home.aspx">
                                 <img class="img-responsive" alt="BabySafe Rx" src="img/logo.png" /></a>
                         </div>
 
@@ -79,7 +79,7 @@
 
                             <div class="show-for-small-only small-12 columns">
                                 <p class="alert-box-small">
-                                    <a href="#">
+                                    <a href="TextAlert.aspx">
                                         <img class="alert-icon img-responsive left" src="img/icon_sms.png" />Sign up for text message alerts.</a>
                                 </p>
                             </div>
@@ -99,7 +99,7 @@
                                 <div class="home-page-alert-box box">
                                     <h2>Alerts</h2>
                                     <p>
-                                        <a href="#">
+                                        <a href="TextAlert.aspx">
                                             <img class="alert-icon img-responsive left" src="img/icon_sms.png" />Sign up for text message alerts.</a>
                                     </p>
 

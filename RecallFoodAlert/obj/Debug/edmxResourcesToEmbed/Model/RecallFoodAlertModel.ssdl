@@ -11,6 +11,7 @@
     <Property Name="MobilePhone" Type="nvarchar" Nullable="false" MaxLength="15" />
     <Property Name="AlertType" Type="nvarchar" Nullable="false" MaxLength="30" />
     <Property Name="StateCode" Type="nchar" Nullable="true" MaxLength="2" />
+    <Property Name="SearchText" Type="nvarchar" Nullable="false" MaxLength="100" />
     <Property Name="RegistrationDateTime" Type="datetime" Nullable="false" />
   </EntityType>
 </Schema>

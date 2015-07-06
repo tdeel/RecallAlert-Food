@@ -12,6 +12,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
     <link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" />
     <script src="js/vendor/modernizr.js"></script>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -45,17 +46,17 @@
 
                             <div class="search-bar row collapse">
                                 <div class="search-bar-input-div large-12 medium-12 small-12 columns">
-                                    <asp:TextBox ID="txtMobilePhone" runat="server" placeholder="Enter Mobile Phone Number"></asp:TextBox>
+                                    <asp:TextBox ID="txtMobilePhone" runat="server" ClientIDMode="Static" placeholder="Enter Mobile Phone Number"></asp:TextBox>
                                 </div>
 
                                 <div class="states-container large-12 medium-12 small-12 columns">
-                                    <asp:DropDownList ID="cmbState" runat="server"
+                                    <asp:DropDownList ID="cmbState" runat="server" ClientIDMode="Static"
                                         DataSourceID="odsStates" DataTextField="Name" DataValueField="Abbreviation">
                                     </asp:DropDownList>
                                 </div>
 
                                 <div class="alerts-text-container large-12 medium-12 small-12 columns">
-                                    <asp:DropDownList ID="lstAlertTypes" runat="server">
+                                    <asp:DropDownList ID="lstAlertTypes" runat="server" ClientIDMode="Static">
                                         <asp:ListItem Value="all" Text="All Alert Types"></asp:ListItem>
                                         <asp:ListItem Value="type-a" Text="Alert Type A"></asp:ListItem>
                                         <asp:ListItem Value="type-b" Text="Alert Type B"></asp:ListItem>
@@ -64,7 +65,7 @@
                                 </div>
 
                                 <div class="search-bar-input-div large-12 medium-12 small-12 columns">
-                                    <asp:TextBox ID="txtFoodBrand" runat="server" placeholder="Enter Food or Brand (Optional)"></asp:TextBox>
+                                    <asp:TextBox ID="txtFoodBrand" runat="server" ClientIDMode="Static" placeholder="Enter Food or Brand (Optional)"></asp:TextBox>
                                 </div>
 
                                 <p>I understand that I can text "S" to 40938 to stop these alerts at any time.</p>
@@ -72,7 +73,7 @@
                                 <div class="large-12 medium-12 small-12 end columns">
                                     <a class="text-cancel left" href="#">
                                         <img src="img/btn_Cancel.jpg" /></a>
-                                    <input class="signup-img right" type="submit" alt="Submit" />
+                                    <input class="signup-img right" type="submit" alt="Submit" onclick="submitForm()" />
                                 </div>
                             </div>
                         </div>
@@ -96,7 +97,30 @@
         <script src="js/foundation.min.js"></script>
         <script>
             $(document).foundation();
-</script>
+        </script>
+        <script type="text/javascript">
+            function submitForm() {
+                var phone = $('#txtMobilePhone').val();
+                var state = $('#cmbState').val();
+                var alertType = $('#lstAlertTypes').val();
+                var foodOrBrand = $('#txtFoodBrand').val();
+
+                var submitData = {"phone": phone, "state": state, "alertType": alertType, "foodOrBrand": foodOrBrand };
+                $.ajax({
+                    type: "POST",
+                    url: "TextAlert.aspx/OnSubmit",
+                    data: submitData,
+                    contentType: 'application/json; charset=utf-8',
+                    dataType: 'json',
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        alert("Request: " + XMLHttpRequest.toString() + "\n\nStatus: " + textStatus + "\n\nError: " + errorThrown);
+                    },
+                    success: function (result) {
+                        alert("We returned: " + result);
+                    }
+                });
+            }
+        </script>
     </form>
 </body>
 </html>

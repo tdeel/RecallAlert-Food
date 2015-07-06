@@ -77,6 +77,7 @@
     <Content Include="css\foundation.min.css" />
     <Content Include="css\normalize.css" />
     <Content Include="css\stylesheet.css" />
+    <Content Include="Default.aspx" />
     <Content Include="Details.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="img\btn_Cancel.jpg" />
@@ -135,11 +136,17 @@
     <Content Include="js\vendor\placeholder.js" />
     <Content Include="Model\RecallFoodAlertModel.edmx.sql" />
     <Content Include="Search.aspx" />
-    <Content Include="text-alert.html" />
     <Content Include="TextAlert.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Details.aspx.cs">
       <DependentUpon>Details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

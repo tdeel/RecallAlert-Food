@@ -11,6 +11,7 @@
     <Property Type="String" Name="MobilePhone" Nullable="false" FixedLength="false" MaxLength="15" Unicode="true" />
     <Property Type="String" Name="AlertType" Nullable="false" FixedLength="false" MaxLength="30" Unicode="true" />
     <Property Type="String" Name="StateCode" Nullable="true" FixedLength="true" MaxLength="2" Unicode="true" />
+    <Property Type="String" Name="SearchText" Nullable="false" FixedLength="false" MaxLength="100" Unicode="true" />
     <Property Type="DateTime" Name="RegistrationDateTime" Nullable="false" />
   </EntityType>
 </Schema>

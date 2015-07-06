@@ -18,6 +18,7 @@ namespace RecallFoodAlert.Model
         public string MobilePhone { get; set; }
         public string AlertType { get; set; }
         public string StateCode { get; set; }
+        public string SearchText { get; set; }
         public System.DateTime RegistrationDateTime { get; set; }
     }
 }

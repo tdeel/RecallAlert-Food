@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, and Azure
 -- --------------------------------------------------
--- Date Created: 07/05/2015 18:24:28
+-- Date Created: 07/06/2015 18:10:29
 -- Generated from EDMX file: C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\Model\RecallFoodAlertModel.edmx
 -- --------------------------------------------------
 
@@ -36,6 +36,7 @@ CREATE TABLE [dbo].[TextAlert] (
     [MobilePhone] nvarchar(15)  NOT NULL,
     [AlertType] nvarchar(30)  NOT NULL,
     [StateCode] nchar(2)  NULL,
+    [SearchText] nvarchar(100)  NOT NULL,
     [RegistrationDateTime] datetime  NOT NULL
 );
 GO

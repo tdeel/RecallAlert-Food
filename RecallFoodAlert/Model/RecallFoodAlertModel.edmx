@@ -16,6 +16,7 @@
     <Property Name="MobilePhone" Type="nvarchar" Nullable="false" MaxLength="15" />
     <Property Name="AlertType" Type="nvarchar" Nullable="false" MaxLength="30" />
     <Property Name="StateCode" Type="nchar" Nullable="true" MaxLength="2" />
+    <Property Name="SearchText" Type="nvarchar" Nullable="false" MaxLength="100" />
     <Property Name="RegistrationDateTime" Type="datetime" Nullable="false" />
   </EntityType>
 </Schema></edmx:StorageModels>
@@ -33,6 +34,7 @@
           <Property Type="String" Name="MobilePhone" Nullable="false" FixedLength="false" MaxLength="15" Unicode="true" />
           <Property Type="String" Name="AlertType" Nullable="false" FixedLength="false" MaxLength="30" Unicode="true" />
           <Property Type="String" Name="StateCode" Nullable="true" FixedLength="true" MaxLength="2" Unicode="true" />
+          <Property Type="String" Name="SearchText" Nullable="false" FixedLength="false" MaxLength="100" Unicode="true" />
           <Property Type="DateTime" Name="RegistrationDateTime" Nullable="false" />
         </EntityType>
       </Schema>
@@ -48,6 +50,7 @@
           <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
           <ScalarProperty Name="AlertType" ColumnName="AlertType" />
           <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="SearchText" ColumnName="SearchText" />
           <ScalarProperty Name="RegistrationDateTime" ColumnName="RegistrationDateTime" />
         </MappingFragment>
       </EntityTypeMapping>
