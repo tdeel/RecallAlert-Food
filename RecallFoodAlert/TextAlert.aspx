@@ -85,7 +85,7 @@
             <footer class="clear">
                 <div class="row">
                     <div class="large-12 medium-12 small-12 columns">
-                        <p class="copyright left">Copyright &copy; 2015 Recall Alert - Food Safety. All Rights Reserved.</p>
+<%--                        <p class="copyright left">Copyright &copy; 2015 Recall Alert - Food Safety. All Rights Reserved.</p>--%>
                     </div>
                 </div>
             </footer>
