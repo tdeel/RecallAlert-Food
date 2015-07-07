@@ -58,7 +58,7 @@
                                     </div>
 
                                     <div class="states-container large-8 medium-8 small-8 columns">
-                                            <asp:DropDownList ID="cmbState" runat="server" CssClass="states-container large-8 medium-8 small-8 columns"
+                                            <asp:DropDownList ID="cmbState" runat="server"
                                                 DataSourceID="odsStates" DataTextField="Name" DataValueField="Abbreviation">
                                             </asp:DropDownList>
                                     </div>
