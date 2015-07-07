@@ -25,6 +25,6 @@ namespace RecallFoodAlert.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<TextAlert> TextAlert { get; set; }
+        public DbSet<TextAlertSignup> TextAlertSignup { get; set; }
     }
 }

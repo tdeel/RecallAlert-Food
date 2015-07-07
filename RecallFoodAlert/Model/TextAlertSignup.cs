@@ -12,7 +12,7 @@ namespace RecallFoodAlert.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class TextAlert
+    public partial class TextAlertSignup
     {
         public int Id { get; set; }
         public string MobilePhone { get; set; }

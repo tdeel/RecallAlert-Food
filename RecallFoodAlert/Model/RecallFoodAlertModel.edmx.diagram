@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="f4c5d2ccfcd84528a18ac44049703b4d" Name="Diagram1" >
-        <EntityTypeShape EntityType="EccoSelect.com.TextAlert" Width="1.5" PointX="2.25" PointY="0.75" />
+        <EntityTypeShape EntityType="EccoSelect.com.TextAlertSignup" Width="1.5" PointX="2.25" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

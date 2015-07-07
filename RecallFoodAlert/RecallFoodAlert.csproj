@@ -177,7 +177,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RecallFoodAlertModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Model\TextAlert.cs">
+    <Compile Include="Model\TextAlertSignup.cs">
       <DependentUpon>RecallFoodAlertModel.tt</DependentUpon>
     </Compile>
     <Compile Include="OpenFda.cs" />

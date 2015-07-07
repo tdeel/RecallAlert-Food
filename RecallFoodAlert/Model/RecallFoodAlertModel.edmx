@@ -6,9 +6,9 @@
     <edmx:StorageModels>
     <Schema Namespace="EccoSelect.com.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityContainer Name="EccoSelectcomStoreContainer">
-    <EntitySet Name="TextAlert" EntityType="EccoSelect.com.Store.TextAlert" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TextAlertSignup" EntityType="EccoSelect.com.Store.TextAlertSignup" store:Type="Tables" Schema="dbo" />
   </EntityContainer>
-  <EntityType Name="TextAlert">
+  <EntityType Name="TextAlertSignup">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -24,9 +24,9 @@
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EccoSelect.com" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
         <EntityContainer Name="RecallEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="TextAlert" EntityType="EccoSelect.com.TextAlert" />
+          <EntitySet Name="TextAlertSignup" EntityType="EccoSelect.com.TextAlertSignup" />
         </EntityContainer>
-        <EntityType Name="TextAlert">
+        <EntityType Name="TextAlertSignup">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
@@ -43,9 +43,9 @@
     <edmx:Mappings>
     <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="EccoSelectcomStoreContainer" CdmEntityContainer="RecallEntities">
-    <EntitySetMapping Name="TextAlert">
-      <EntityTypeMapping TypeName="IsTypeOf(EccoSelect.com.TextAlert)">
-        <MappingFragment StoreEntitySet="TextAlert">
+    <EntitySetMapping Name="TextAlertSignup">
+      <EntityTypeMapping TypeName="IsTypeOf(EccoSelect.com.TextAlertSignup)">
+        <MappingFragment StoreEntitySet="TextAlertSignup">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
           <ScalarProperty Name="AlertType" ColumnName="AlertType" />

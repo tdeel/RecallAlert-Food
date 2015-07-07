@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, and Azure
 -- --------------------------------------------------
--- Date Created: 07/06/2015 18:10:29
+-- Date Created: 07/06/2015 18:49:59
 -- Generated from EDMX file: C:\Users\scott_000\Documents\Projects\RecallFoodAlert\RecallFoodAlert\Model\RecallFoodAlertModel.edmx
 -- --------------------------------------------------
 
@@ -30,8 +30,8 @@ GO
 -- Creating all tables
 -- --------------------------------------------------
 
--- Creating table 'TextAlert'
-CREATE TABLE [dbo].[TextAlert] (
+-- Creating table 'TextAlertSignup'
+CREATE TABLE [dbo].[TextAlertSignup] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [MobilePhone] nvarchar(15)  NOT NULL,
     [AlertType] nvarchar(30)  NOT NULL,
@@ -45,9 +45,9 @@ GO
 -- Creating all PRIMARY KEY constraints
 -- --------------------------------------------------
 
--- Creating primary key on [Id] in table 'TextAlert'
-ALTER TABLE [dbo].[TextAlert]
-ADD CONSTRAINT [PK_TextAlert]
+-- Creating primary key on [Id] in table 'TextAlertSignup'
+ALTER TABLE [dbo].[TextAlertSignup]
+ADD CONSTRAINT [PK_TextAlertSignup]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
