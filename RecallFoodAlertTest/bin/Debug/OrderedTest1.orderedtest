@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<OrderedTest name="orderedtest1" storage="c:\users\scott_000\documents\projects\recallfoodalert\recallfoodalerttest\orderedtest1.orderedtest" id="10285090-15c8-475e-be85-f23012afbd87" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <TestLinks>
-    <TestLink id="03e57c7c-445d-02d2-e5bd-cfa92ef99de7" name="SearchAPI" storage="bin\debug\recallfoodalerttest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="03e57c7c-445d-02d2-e5bd-cfa92ef99de7" name="SearchAPI" storage="bin\debug\recallfoodalerttest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="30207f2e-79a7-3ccc-dcd4-3527df0b3de9" name="GetStateList" storage="bin\debug\recallfoodalerttest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  </TestLinks>
-</OrderedTest>

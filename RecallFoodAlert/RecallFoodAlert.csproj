@@ -137,7 +137,9 @@
     <Content Include="Model\RecallFoodAlertModel.edmx.sql" />
     <Content Include="Search.aspx" />
     <Content Include="TextAlert.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
